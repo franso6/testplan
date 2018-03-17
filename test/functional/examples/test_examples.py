@@ -76,8 +76,6 @@ def test_example(root, filename):
             subprocess.check_output(
                 [
                     sys.executable,
-                    _relative_dir(os.path.join('ms', 'scripts', 'bin',
-                                               'run_testplan.py')),
                     filename
                 ],
                 stderr=subprocess.STDOUT
