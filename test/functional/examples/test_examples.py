@@ -14,8 +14,8 @@ KNOWN_EXCEPTIONS = [
     "TclError: Can't find a usable init\.tcl in the following directories:",
     "ImportError: No module named Tkinter",
     "ImportError: lib.*\.so\..+: cannot open shared object file: No such file or directory",
-    "RuntimeError: Download pyfixmsg library .*",
-    "No spec file set\. You should download .*",
+    "RuntimeError: Download pyfixmsg library .*", # missing pyfixmsg module. Will skip Transports/FIX
+    "No spec file set\. You should download .*",  # missing quickfix spec XML file. Will skip Transports/FIX
     "AttributeError: 'module' object has no attribute 'poll'"
 ]
 
