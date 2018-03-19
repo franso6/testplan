@@ -17,3 +17,13 @@ Makefile
 
 /test/functional/**/runTests
 /testplan/examples/**/runTests
+
+.pytest_cache/v/cache/lastfailed
+
+.venv2
+.venv3
+build
+*.iml
+Testplan.egg-info
+dist
+.gitignore 
