@@ -38,11 +38,7 @@ def test_app_cmd():
 
 def test_app_env():
     app = App(name='App', binary='echo',
-<<<<<<< HEAD
               args=['%KEY%' if platform.system() == "Windows" else '$KEY'],
-=======
-              args=['%KEY%' if platform.system() == 'Windows' else '$KEY'],
->>>>>>> Morgan-Stanley/master
               env={'KEY': 'VALUE'}, shell=True)
     with app:
         app.proc.wait()
